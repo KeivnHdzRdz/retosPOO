@@ -11,10 +11,9 @@ int solution(vector<int> A){
         if(A[i] == A[0]){
          contador = contador - 1;
         }
-        if(A[i] != A[i]-1){
+        if(A[i] != A[i]+1){
         contador = contador + 1;
         }
-
 
     }
 
@@ -23,6 +22,6 @@ int solution(vector<int> A){
 
 
 int main(){
-    vector<int> A{2, 1, 1, 2, 3, 1};
+    vector<int> A{2,1,1,2,3,1};
     cout << solution(A) << endl;
 }
